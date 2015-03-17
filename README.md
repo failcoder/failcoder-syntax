@@ -1,4 +1,4 @@
-# failcoder-theme theme
+# failcoder-syntax theme
 
 A short description of your theme.
 
