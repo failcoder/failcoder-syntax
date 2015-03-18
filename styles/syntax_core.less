@@ -1,7 +1,7 @@
 @import "syntax__colors";
 
 .comment {
-  color: @syntax-lightgray;
+  color: @syntax-gray;
 }
 
 .entity {
@@ -114,11 +114,9 @@
 
 .invalid {
   background-color: @syntax-red;
-  color: @syntax-bg-inset;
+  color: #000000;
 
   &.illegal, &.deprecated {
-    color: #ffffff;
-    background-color: @syntax-red;
     font-style: bold;
   }
 }
