@@ -4,7 +4,7 @@
   color: @syntax-bloodorange;
 }
 
-.keyword.language.lua, .constant.language.lua, .variable.parameter.function.lua {
+.keyword.language.lua, .constant.language.lua, .variable.parameter.function.lua, .entity.name.lua, .entity.name.class.lua {
   color: @syntax-ice;
 }
 
@@ -13,16 +13,20 @@
   color: @syntax-red;
 }
 
-.entity.name.lua, .entity.name.class.lua {
-  color: @syntax-yellow;
+.variable.other.lua {
+  color: @syntax-lightyellow;
 }
 
-.entity.name.function.lua, .punctuation.definition.parameters.begin.lua, .punctuation.definition.parameters.end.lua, .support.function.any-method.lua {
+.punctuation.definition.parameters.begin.lua, .punctuation.definition.parameters.end.lua, .support.function.any-method.lua {
   color: @syntax-lightblue;
 }
 
+.entity.name.function.lua {
+  color: @syntax-lightgreen;
+}
+
 .entity.name.function.scope.lua {
-  color: @syntax-yellow;
+  color: @syntax-darkgreen;
 }
 
 .meta.require.lua, .meta.function-call.lua, .support.function.lua {
