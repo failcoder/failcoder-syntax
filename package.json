@@ -2,7 +2,7 @@
   "name": "failcoder-syntax",
   "theme": "syntax",
   "version": "1.0.0",
-  "description": "A short description of your syntax theme",
+  "description": "A multi-code focused syntax theme with soft contrast in its colors.",
   "repository": "https://github.com/failcoder/failcoder-syntax",
   "license": "MIT",
   "engines": {
