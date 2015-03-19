@@ -1,11 +1,12 @@
-@import "syntax__colors";
+:host, atom-text-editor, atom-text-editor::shadow {
+  .highlights {
 
-.highlights {
-  &.highlight-selected .region {
-    border-color: #ff5d00;
-  }
+    .highlight-selected .region {
+      border-color: #91ff00 !important;
+    }
 
-  &.highlight-selected.background .region {
-    background-color: rgba(255, 119, 0, 0.75);
+    .highlight-selected.background .region {
+      background-color: rgba(58, 176, 0, 0.67) !important;
+    }
   }
 }
