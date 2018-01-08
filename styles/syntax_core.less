@@ -1,10 +1,10 @@
 @import "syntax__colors";
 
-.comment {
+.syntax--comment {
   color: @syntax-comment-color;
 }
 
-.entity {
+.syntax--entity {
   color: @syntax-yellow;
 
   &.function {
@@ -29,7 +29,7 @@
   }
 }
 
-.keyword {
+.syntax--keyword {
   color: @syntax-blue;
 
   &.control, &.language {
@@ -54,7 +54,7 @@
   }
 }
 
-.storage {
+.syntax--storage {
   color: @syntax-purple;
 
   &.type.function {
@@ -75,7 +75,7 @@
   }
 }
 
-.constant {
+.syntax--constant {
   color: @syntax-orange;
 
   &.character.escape {
@@ -100,7 +100,7 @@
   }
 }
 
-.variable {
+.syntax--variable {
   color: @syntax-lightorange;
 
   &.other.lua {
@@ -116,7 +116,7 @@
   }
 }
 
-.invalid {
+.syntax--invalid {
   background-color: @syntax-red;
   color: #000000;
 
@@ -125,7 +125,7 @@
   }
 }
 
-.string {
+.syntax--string {
   color: @syntax-string-color;
 
   &.unquoted {
@@ -157,7 +157,7 @@
   }
 }
 
-.punctuation {
+.syntax--punctuation {
   &.definition {
     &.comment {
       color: @syntax-comment-color;
@@ -192,7 +192,7 @@
 
 }
 
-.support {
+.syntax--support {
   &.type, &.class {
     color: @syntax-lightorange;
   }
@@ -222,7 +222,7 @@
   }
 }
 
-.entity {
+.syntax--entity {
   &.name.function {
     color: @syntax-blue;
   }
@@ -252,7 +252,7 @@
   }
 }
 
-.meta {
+.syntax--meta {
   &.class {
     color: @syntax-lightorange;
   }
@@ -289,11 +289,11 @@
   }
 }
 
-.none {
+.syntax--none {
   color: @syntax-text-color;
 }
 
-.markup {
+.syntax--markup {
   &.bold {
     color: @syntax-peach;
     font-style: bold;
@@ -335,7 +335,7 @@
   }
 }
 
-.source {
+.syntax--source {
   &.gfm .markup {
     -webkit-font-smoothing: auto;
     &.heading {
