@@ -1,28 +1,24 @@
-.syntax--string.syntax--quoted.syntax--double.syntax--js, 
-.syntax--string.syntax--quoted.syntax--single.syntax--js, 
-.syntax--string.syntax--quoted.syntax--other.syntax--js {
-  color: #af9fdf;
-}
+@import "syntax__colors";
 
-.syntax--string.syntax--quoted.syntax--double.syntax--js, 
-.syntax--string.syntax--quoted.syntax--single.syntax--js, 
+.syntax--string.syntax--quoted.syntax--double.syntax--js,
+.syntax--string.syntax--quoted.syntax--single.syntax--js,
 .syntax--string.syntax--quoted.syntax--other.syntax--js {
-  color: #efa332;
+  color: @syntax-string-color;
 }
 
 .syntax--entity.syntax--other.syntax--attribute-name.syntax--js {
-  color: #99cc99;
+  color: @syntax-property-color;
 }
 
 .syntax--entity.syntax--name.syntax--type.syntax--instance.syntax--js {
-  color: #b5ff6a;
+  color: @syntax-module-color;
 }
 
-.syntax--keyword.syntax--js, 
+.syntax--keyword.syntax--js,
 .syntax--keyword.syntax--control.syntax--js {
-  color: #94a6fc;
+  color: @syntax-keyword-color;
 }
 
 .syntax--constant.syntax--js {
-  color: #df7925;
+  color: @syntax-constants-color;
 }

@@ -1,14 +1,16 @@
-.syntax--punctuation.syntax--definition.syntax--string.syntax--php, 
-.syntax--string.syntax--quoted.syntax--double.syntax--php, 
+@import "syntax__colors";
+
+.syntax--punctuation.syntax--definition.syntax--string.syntax--php,
+.syntax--string.syntax--quoted.syntax--double.syntax--php,
 .syntax--string.syntax--quoted.syntax--single.syntax--php {
-  color: #e0cc75;
+  color: @syntax-substring-color;
 }
 
 .syntax--entity.syntax--other.syntax--attribute-name.syntax--php {
-  color: #99ccee;
+  color: @syntax-ligature-color;
 }
 
-.syntax--constant.syntax--other.syntax--php, 
+.syntax--constant.syntax--other.syntax--php,
 .syntax--variable.syntax--parameter.syntax--php {
-  color: #2095f0;
+  color: @syntax-variable-color;
 }
