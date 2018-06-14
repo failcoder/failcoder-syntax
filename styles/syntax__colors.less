@@ -23,25 +23,30 @@
 @syntax-darkred: #CD2000;
 @syntax-red: #E92E2E;
 @syntax-lightred: #FF4180;
-@syntax-salmon: #EF5350;
-@syntax-pink: #FA7C82;
+@syntax-pink: #FF5F6F;
 
 // ORANGE
 @syntax-redorange: #FB5109;
-@syntax-darkorange: #C56900;
+@syntax-darkorange: #B56900;
 @syntax-orange: #F57C00;
-@syntax-lightorange: #DBB867;
+@syntax-lightorange: #F59C20;
 
 // YELLOW
 @syntax-gold: #FFBF48;
 @syntax-yellow: #FFDF00;
+@syntax-lightyellow: #DBB867;
 
 // GREEN
 @syntax-lightolive: #CFCA95;
-@syntax-yellowgreen: #A8FF60;
+@syntax-yellowgreen: #A8EF60;
+@syntax-darkgreen: #56BF00;
 @syntax-green: #76FF03;
-@syntax-lightgreen: #95C797;
+@syntax-lightgreen: #65C767;
+@syntax-bluegreen: #88DFB0;
+@syntax-moss: #95C797;
+@syntax-lightmoss: #B3D9B2;
 @syntax-aqua: #8ABEB7;
+@syntax-teal: #008080;
 
 // BLUE
 @syntax-cyan: #18FFFF;
@@ -59,32 +64,42 @@
 // General colors
 @syntax-constants-color: @syntax-yellow;
 @syntax-integer-color: @syntax-green;
-@syntax-string-color: @syntax-lightgreen;
+@syntax-string-color: @syntax-lightorange;
+@syntax-string-punctuation-color: @syntax-darkorange;
 @syntax-substring-color: @syntax-lightolive;
 @syntax-comment-color: @syntax-lightblack;
-@syntax-attribute-color: @syntax-orange;
+@syntax-attribute-color: @syntax-blue;
 @syntax-parameter-color: @syntax-pink;
-@syntax-identifier-color: @syntax-lightorange;
-@syntax-variable-color: @syntax-darkblue;
+@syntax-identifier-color: @syntax-moss;
+@syntax-variable-color: @syntax-lightyellow;
+@syntax-escape-color: @syntax-yellowgreen;
 @syntax-function-color: @syntax-lightcyan;
-@syntax-support-color: @syntax-aqua;
+@syntax-support-color: @syntax-darkblue;
 @syntax-keyword-color: @syntax-periwinkle;
-@syntax-object-color: @syntax-salmon;
-@syntax-ligature-color: @syntax-blue;
+@syntax-object-color: @syntax-pink;
+@syntax-ligature-color: @syntax-magenta;
 @syntax-property-color: @syntax-lightblue;
 @syntax-module-color: @syntax-cyan;
-@syntax-reference-color: @syntax-darkred;
+@syntax-reference-color: @syntax-redorange;
 @syntax-modifier-color: @syntax-purple;
 @syntax-storage-color: @syntax-purple;
 @syntax-tag-color: @syntax-gold;
 @syntax-error-color: @syntax-red;
+
+// RegExp
+@syntax-regexp-color: #99EF00;
+@syntax-regexp-bg2: #1A3F0F;
+@syntax-regexp-bg: rgba(55, 255, 50, 0.1);
+@syntax-regexp-punctuation-color: #00EF99;
+@syntax-regexp-keyword-color: #9FCF9F;
+@syntax-regexp-constant-color: #9FCF9F;
 
 // For git diff info. i.e. in the gutter
 // These are static and were not extracted from your textmate theme
 @syntax-color-renamed: @syntax-blue;
 @syntax-color-added: @syntax-yellowgreen;
 @syntax-color-modified: @syntax-lightorange;
-@syntax-color-removed: @syntax-salmon;
+@syntax-color-removed: @syntax-pink;
 
 // Syntax common colors
 @syntax-bg-inset: rgba(49, 48, 46, 0.51);

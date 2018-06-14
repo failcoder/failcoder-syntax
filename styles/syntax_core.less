@@ -5,7 +5,6 @@
 }
 
 .syntax--entity {
-  color: @syntax-cyan;
 
   &.syntax--function {
     color: @syntax-function-color;
@@ -21,7 +20,7 @@
 
   &.syntax--name.syntax--type {
     color: @syntax-keyword-color;
-    text-decoration: underline;
+    font-style: italic;
   }
 
   &.syntax--other.syntax--inherited-class {
@@ -30,16 +29,13 @@
 }
 
 .syntax--keyword {
-  color: @syntax-keyword-color;
-
-  &.syntax--control, &.syntax--language {
-    color: @syntax-keyword-color;
-  }
 
   &.syntax--operator {
+    font-weight: bold;
     color: @syntax-fg-color;
   }
 
+  &.syntax--control,
   &.syntax--other.syntax--special-method {
     color: @syntax-keyword-color;
   }
@@ -48,9 +44,10 @@
     color: @syntax-identifier-color;
   }
 
-  &.syntax--other.syntax--new {
+  &.syntax--other.syntax--new,
+  &.syntax--operator.syntax--new {
     font-weight: bold;
-    color: @syntax-error-color;
+    color: @syntax-constants-color;
   }
 }
 
@@ -75,16 +72,58 @@
   }
 }
 
-.syntax--constant {
-  color: @syntax-object-color;
+.syntax--source {
+  color: @syntax-fg-color;
+}
 
-  &.syntax--character.syntax--escape {
-    color: @syntax-attribute-color;
+.syntax--string {
+  &.syntax--regexp {
+    background-color: @syntax-regexp-bg;
+  }
+}
+
+.syntax--regexp {
+  color: @syntax-regexp-color;
+  font-style: normal;
+
+  .syntax--punctuation.syntax--definition.syntax--character-class {
+    color: @syntax-regexp-punctuation-color;
+    font-weight: bold;
+  }
+
+  .syntax--keyword {
+    color: @syntax-regexp-keyword-color;
+    font-weight: bold;
+  }
+
+  .syntax--constant {
+    color: @syntax-regexp-constant-color;
+    font-weight: bold;
+  }
+}
+
+.syntax--meta.syntax--flag {
+  font-weight: bold;
+  font-style: italic;
+  &.syntax--regexp {
+    color: @syntax-escape-color;
+  }
+}
+
+.syntax--source.syntax--ruby.syntax--embedded {
+  color: @syntax-object-color;
+}
+
+.syntax--constant {
+
+  &.syntax--other {
+    color: @syntax-fg-color;
   }
 
   &.syntax--language {
     font-style: italic;
-    color: @syntax-keyword-color;
+    font-weight: bold;
+    color: @syntax-reference-color;
   }
 
   &.syntax--numeric {
@@ -96,13 +135,14 @@
   }
 
   &.syntax--other.syntax--color, &.syntax--other.syntax--symbol {
-    color: @syntax-support-color;
+    color: @syntax-keyword-color;
   }
 }
 
 .syntax--variable {
-  color: @syntax-identifier-color;
+  color: @syntax-variable-color;
 
+  &.syntax--other.syntax--property,
   &.syntax--other.syntax--lua {
     color: @syntax-fg-color;
   }
@@ -126,8 +166,6 @@
 }
 
 .syntax--string {
-  color: @syntax-string-color;
-
   &.syntax--unquoted {
     font-style: italic;
     color: lighten(@syntax-string-color, 10%);
@@ -143,22 +181,29 @@
     background-color: @syntax-bg-inset;
   }
 
-  &.syntax--regexp {
-    color: @syntax-integer-color;
-    background-color: #222f09;
-
-    .syntax--source.syntax--ruby.syntax--embedded {
-      color: @syntax-object-color;
-    }
-  }
-
   &.syntax--other.syntax--link {
     color: @syntax-function-color;
   }
 }
 
+.syntax--template {
+  color: darken(@syntax-string-color, 4%);
+  background-color: @syntax-bg-inset;
+
+  .syntax--embedded {
+    color: lighten(@syntax-string-color, 12%);
+    font-weight: bold;
+    font-style: italic;
+  }
+}
+
 .syntax--punctuation {
   &.syntax--definition {
+
+    &.syntax--arguments {
+      color: @syntax-fg-color;
+    }
+
     &.syntax--comment {
       color: @syntax-comment-color;
     }
@@ -174,9 +219,17 @@
       color: @syntax-keyword-color;
     }
 
+    &.syntax--string {
+      &.syntax--begin,
+      &.syntax--end {
+        font-weight: bold;
+        color: @syntax-string-punctuation-color;
+      }
+    }
+
     &.syntax--bold {
       color: @syntax-identifier-color;
-      font-style: bold;
+      font-weight: bold;
     }
 
     &.syntax--italic {
@@ -202,11 +255,7 @@
   }
 
   &.syntax--function  {
-    color: @syntax-support-color;
-
-    &.syntax--any-method {
-      color: @syntax-keyword-color;
-    }
+    color: @syntax-keyword-color;
   }
 
   &.syntax--function.syntax--construct {
