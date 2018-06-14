@@ -18,10 +18,6 @@
     color: @syntax-identifier-color;
   }
 
-  &.syntax--name.syntax--class {
-    color: @syntax-modifier-color;
-  }
-
   &.syntax--name.syntax--type {
     color: @syntax-keyword-color;
     font-style: italic;
@@ -56,24 +52,17 @@
 }
 
 .syntax--storage {
+
   color: @syntax-storage-color;
 
-  &.syntax--type.syntax--function {
-    color: @syntax-storage-color;
-  }
-
+  &.syntax--type,
   &.syntax--modifier {
     font-style: italic;
-    color: @syntax-storage-color;
   }
+}
 
-  &.syntax--type.syntax--class, &.syntax--type.syntax--method, &.syntax--type.syntax--module {
-    color: @syntax-object-color;
-  }
-
-  &.syntax--modifier.syntax--extends, &.syntax--modifier.syntax--global, &.syntax--modifier.syntax--implements {
-    color: @syntax-object-color;
-  }
+.syntax--module {
+  color: @syntax-module-color;
 }
 
 .syntax--source {
@@ -89,12 +78,6 @@
 
   &.syntax--quoted {
     color: darken(@syntax-string-color, 10%);
-    // &.syntax--single {
-    //   font-style: italic;
-    // }
-    // &.syntax--double {
-    //   font-style: italic;
-    // }
   }
 
   &.syntax--other.syntax--link {
@@ -181,7 +164,7 @@
   color: @syntax-black-absolute;
 
   &.syntax--illegal, &.syntax--deprecated {
-    font-style: bold;
+    font-weight: bold;
   }
 }
 
@@ -191,8 +174,6 @@
 
   .syntax--embedded {
     color: lighten(@syntax-string-color, 12%);
-    font-weight: bold;
-    font-style: italic;
   }
 }
 
@@ -239,7 +220,9 @@
 
   &.syntax--section.syntax--embedded, &.syntax--variable.syntax--interpolation {
     color: @syntax-mg-color;
-    font-style: bold;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0 0.2em;
   }
 
 }
@@ -344,7 +327,7 @@
 .syntax--markup {
   &.syntax--bold {
     color: @syntax-parameter-color;
-    font-style: bold;
+    font-weight: bold;
   }
 
   &.syntax--changed {
