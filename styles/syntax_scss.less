@@ -1,0 +1,48 @@
+@import "syntax__colors";
+
+.syntax--punctuation.syntax--separator.syntax--key-value.syntax--scss,
+.syntax--punctuation.syntax--terminator.syntax--rule.syntax--scss {
+  color: @syntax-stylesheet-punctuation;
+}
+
+.syntax--constant.syntax--other.syntax--color.syntax--rgb-value.syntax--scss,
+.syntax--support.syntax--constant.syntax--property-value.syntax--scss,
+.syntax--support.syntax--constant.syntax--property-value.syntax--scss {
+  color: @syntax-stylesheet-value;
+}
+
+.syntax--property-name.syntax--scss,
+.syntax--attribute-name.syntax--scss {
+  color: @syntax-stylesheet-property;
+}
+
+.syntax--entity {
+  &.syntax--name.syntax--tag.syntax--scss {
+    font-style: italic;
+    color: @syntax-stylesheet-element;
+  }
+
+  &.syntax--other {
+    &.syntax--attribute-name {
+      &.syntax--id.syntax--scss {
+        color: @syntax-stylesheet-id;
+      }
+      &.syntax--class.syntax--scss {
+        color: @syntax-stylesheet-class;
+      }
+      &.syntax--pseudo-element.syntax--scss {
+        font-style: italic;
+        color: @syntax-stylesheet-pseudo;
+      }
+    }
+  }
+}
+
+.syntax--keyword.syntax--other.syntax--unit.syntax--scss {
+  font-style: italic;
+  color: @syntax-stylesheet-unit;
+}
+
+.syntax--variable.syntax--scss {
+  color: @syntax-stylesheet-variable;
+}

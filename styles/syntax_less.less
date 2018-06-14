@@ -1,0 +1,48 @@
+@import "syntax__colors";
+
+.syntax--punctuation.syntax--separator.syntax--key-value.syntax--less,
+.syntax--punctuation.syntax--terminator.syntax--rule.syntax--less {
+  color: @syntax-stylesheet-punctuation;
+}
+
+.syntax--constant.syntax--other.syntax--color.syntax--rgb-value.syntax--less,
+.syntax--support.syntax--constant.syntax--property-value.syntax--less,
+.syntax--support.syntax--constant.syntax--property-value.syntax--less {
+  color: @syntax-stylesheet-value;
+}
+
+.syntax--property-name.syntax--less,
+.syntax--attribute-name.syntax--less {
+  color: @syntax-stylesheet-property;
+}
+
+.syntax--entity {
+  &.syntax--name.syntax--tag.syntax--less {
+    font-style: italic;
+    color: @syntax-stylesheet-element;
+  }
+
+  &.syntax--other {
+    &.syntax--attribute-name {
+      &.syntax--id.syntax--less {
+        color: @syntax-stylesheet-id;
+      }
+      &.syntax--class.syntax--less {
+        color: @syntax-stylesheet-class;
+      }
+      &.syntax--pseudo-element.syntax--less {
+        font-style: italic;
+        color: @syntax-stylesheet-pseudo;
+      }
+    }
+  }
+}
+
+.syntax--keyword.syntax--other.syntax--unit.syntax--less {
+  font-style: italic;
+  color: @syntax-stylesheet-unit;
+}
+
+.syntax--variable.syntax--less {
+  color: @syntax-stylesheet-variable;
+}

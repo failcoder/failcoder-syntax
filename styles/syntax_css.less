@@ -1,42 +1,48 @@
 @import "syntax__colors";
 
-.syntax--constant.syntax--other.syntax--color.syntax--rgb-value.syntax--css,
-.syntax--support.syntax--constant.syntax--property-value.syntax--css {
-  color: @syntax-fg-accent;
-}
-
-.syntax--meta.syntax--property-name.syntax--css {
-  color: @syntax-mg-color;
-}
-
 .syntax--punctuation.syntax--separator.syntax--key-value.syntax--css,
 .syntax--punctuation.syntax--terminator.syntax--rule.syntax--css {
-  color: @syntax-fg-accent;
+  color: @syntax-stylesheet-punctuation;
 }
 
+.syntax--constant.syntax--other.syntax--color.syntax--rgb-value.syntax--css,
+.syntax--support.syntax--constant.syntax--property-value.syntax--css,
 .syntax--support.syntax--constant.syntax--property-value.syntax--css {
-  color: @syntax-fg-color;
+  color: @syntax-stylesheet-value;
 }
 
-.syntax--constant.syntax--numeric.syntax--css {
-  color: @syntax-fg-color;
+.syntax--property-name.syntax--css,
+.syntax--attribute-name.syntax--css {
+  color: @syntax-stylesheet-property;
 }
 
-.syntax--entity.syntax--name.syntax--tag.syntax--css {
-  font-style: italic;
-  color: @syntax-tag-color;
-}
+.syntax--entity {
+  &.syntax--name.syntax--tag.syntax--css {
+    font-style: italic;
+    color: @syntax-stylesheet-element;
+  }
 
-.syntax--entity.syntax--other.syntax--attribute-name.syntax--class.syntax--css,
-.syntax--entity.syntax--other.syntax--attribute-name.syntax--id.syntax--css {
-  color: @syntax-attribute-color;
+  &.syntax--other {
+    &.syntax--attribute-name {
+      &.syntax--id.syntax--css {
+        color: @syntax-stylesheet-id;
+      }
+      &.syntax--class.syntax--css {
+        color: @syntax-stylesheet-class;
+      }
+      &.syntax--pseudo-element.syntax--css {
+        font-style: italic;
+        color: @syntax-stylesheet-pseudo;
+      }
+    }
+  }
 }
 
 .syntax--keyword.syntax--other.syntax--unit.syntax--css {
-  color: @syntax-ligature-color;
+  font-style: italic;
+  color: @syntax-stylesheet-unit;
 }
 
-.syntax--support.syntax--type.syntax--property-name.syntax--css,
-.syntax--meta.syntax--property-name.syntax--css {
-  color: @syntax-fg-color;
+.syntax--variable.syntax--css {
+  color: @syntax-stylesheet-variable;
 }

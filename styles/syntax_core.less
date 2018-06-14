@@ -4,6 +4,10 @@
   color: @syntax-comment-color;
 }
 
+.syntax--numeric {
+  color: @syntax-integer-color;
+}
+
 .syntax--entity {
 
   &.syntax--function {
@@ -77,6 +81,26 @@
 }
 
 .syntax--string {
+  &.syntax--unquoted {
+    font-style: italic;
+    color: lighten(@syntax-string-color, 10%);
+    background-color: @syntax-bg-inset;
+  }
+
+  &.syntax--quoted {
+    color: darken(@syntax-string-color, 10%);
+    // &.syntax--single {
+    //   font-style: italic;
+    // }
+    // &.syntax--double {
+    //   font-style: italic;
+    // }
+  }
+
+  &.syntax--other.syntax--link {
+    color: @syntax-function-color;
+  }
+
   &.syntax--regexp {
     background-color: @syntax-regexp-bg;
   }
@@ -126,10 +150,6 @@
     color: @syntax-reference-color;
   }
 
-  &.syntax--numeric {
-    color: @syntax-integer-color;
-  }
-
   &.syntax--numeric.syntax--floating-point {
     text-decoration: underline;
   }
@@ -162,27 +182,6 @@
 
   &.syntax--illegal, &.syntax--deprecated {
     font-style: bold;
-  }
-}
-
-.syntax--string {
-  &.syntax--unquoted {
-    font-style: italic;
-    color: lighten(@syntax-string-color, 10%);
-    background-color: @syntax-bg-inset;
-  }
-
-  &.syntax--quoted.syntax--single {
-    font-style: italic;
-    color: darken(@syntax-string-color, 10%);
-  }
-
-  &.syntax--quoted.syntax--double {
-    background-color: @syntax-bg-inset;
-  }
-
-  &.syntax--other.syntax--link {
-    color: @syntax-function-color;
   }
 }
 
