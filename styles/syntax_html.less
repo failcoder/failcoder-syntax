@@ -1,7 +1,26 @@
 @import "syntax__colors";
 
-.syntax--punctuation.syntax--definition.syntax--string.syntax--html,
-.syntax--string.syntax--quoted.syntax--double.syntax--html,
-.syntax--string.syntax--quoted.syntax--single.syntax--html {
-  color: @syntax-substring-color;
+.syntax--meta.syntax--tag.syntax--html {
+  color: @syntax-xhtml-punctuation-color;
+}
+
+.syntax--entity.syntax--name.syntax--tag.syntax--localname.syntax--html {
+  color: @syntax-xhtml-tag-color;
+  // font-style: italic;
+  font-weight: bold;
+}
+
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--html,
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--localname.syntax--html {
+  color: @syntax-xhtml-key-color;
+  font-style: italic;
+}
+
+.syntax--string.syntax--html {
+  color: @syntax-xhtml-value-color;
+}
+
+.syntax--punctuation.syntax--definition.syntax--string.syntax--begin.syntax--html,
+.syntax--punctuation.syntax--definition.syntax--string.syntax--end.syntax--html {
+  color: @syntax-xhtml-quotes-color;
 }

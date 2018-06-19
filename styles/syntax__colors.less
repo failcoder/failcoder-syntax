@@ -22,8 +22,9 @@
 // RED
 @syntax-darkred: #CD2000;
 @syntax-red: #E92E2E;
-@syntax-lightred: #FF4180;
-@syntax-pink: #FF5F6F;
+@syntax-lightred: #FF5F6F;
+@syntax-pink: #FF69A4;
+@syntax-hotpink: #FF4180;
 
 // ORANGE
 @syntax-redorange: #FB5109;
@@ -37,7 +38,8 @@
 @syntax-lightyellow: #DBB867;
 
 // GREEN
-@syntax-lightolive: #CFCA95;
+@syntax-olive: #A5B470;
+@syntax-lightolive: #AFC09F;
 @syntax-yellowgreen: #A8EF60;
 @syntax-darkgreen: #269F00;
 @syntax-green: #76FF03;
@@ -55,7 +57,7 @@
 @syntax-darkblue: #1481FF;
 @syntax-blue: #96CBFE;
 @syntax-periwinkle: #8EB2FF;
-@syntax-lightblue: #BDD4EE;
+@syntax-lightblue: #A8CFF5;
 
 // PURPLE
 @syntax-indigo: #3300FF;
@@ -69,6 +71,7 @@
 @syntax-string-color: @syntax-lightorange;
 @syntax-string-punctuation-color: @syntax-darkorange;
 @syntax-substring-color: @syntax-lightolive;
+@syntax-substring-punctuation-color: @syntax-olive;
 @syntax-comment-color: @syntax-lightblack;
 @syntax-attribute-color: @syntax-blue;
 @syntax-parameter-color: @syntax-pink;
@@ -78,7 +81,7 @@
 @syntax-function-color: @syntax-lightcyan;
 @syntax-support-color: @syntax-darkblue;
 @syntax-keyword-color: @syntax-periwinkle;
-@syntax-object-color: @syntax-pink;
+@syntax-object-color: @syntax-lightred;
 @syntax-ligature-color: @syntax-magenta;
 @syntax-property-color: @syntax-lightblue;
 @syntax-module-color: @syntax-cyan;
@@ -142,6 +145,19 @@
 @syntax-gutter-background-color: @syntax-bg-color;
 @syntax-gutter-background-color-selected: @syntax-bg-highlight;
 
+// Markup specific
+@syntax-xhtml-tag-color: @syntax-lightred;
+@syntax-xhtml-key-color: @syntax-orange;
+@syntax-xhtml-value-color: @syntax-lightyellow;
+@syntax-xhtml-quotes-color: rgba(255, 205, 0, 0.5);
+@syntax-xhtml-punctuation-color: rgba(255, 120, 0, 0.66);
+
+// JSON specific
+@syntax-json-string-color: @syntax-lightred;
+@syntax-json-string-punctuation-color: rgba(255, 70, 70, 0.5);
+@syntax-json-substring-color: @syntax-lightyellow;
+@syntax-json-substring-punctuation-color: rgba(255, 205, 0, 0.5);
+
 // Stylesheet specific
 @syntax-stylesheet-property: @syntax-fg-color;
 @syntax-stylesheet-punctuation: @syntax-fg-accent;
@@ -149,6 +165,6 @@
 @syntax-stylesheet-element: @syntax-redorange;
 @syntax-stylesheet-id: @syntax-orange;
 @syntax-stylesheet-class: @syntax-lightyellow;
-@syntax-stylesheet-variable: @syntax-pink;
+@syntax-stylesheet-variable: @syntax-lightred;
 @syntax-stylesheet-unit: @syntax-lightorange;
 @syntax-stylesheet-pseudo: @syntax-darkorange;
