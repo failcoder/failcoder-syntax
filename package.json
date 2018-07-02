@@ -1,59 +1,11 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "C:\\Users\\STJACK~1\\AppData\\Local\\Temp\\d-118519-2314648-120asqv.63s198uxr\\package.tgz",
-        "scope": null,
-        "escapedName": null,
-        "name": null,
-        "rawSpec": "C:\\Users\\STJACK~1\\AppData\\Local\\Temp\\d-118519-2314648-120asqv.63s198uxr\\package.tgz",
-        "spec": "C:\\Users\\STJACK~1\\AppData\\Local\\Temp\\d-118519-2314648-120asqv.63s198uxr\\package.tgz",
-        "type": "local"
-      },
-      "C:\\Users\\STJACK~1\\AppData\\Local\\Temp\\apm-install-dir-118519-2314648-13sees2.opmcdte29"
-    ]
-  ],
-  "_from": "..\\d-118519-2314648-120asqv.63s198uxr\\package.tgz",
-  "_id": "failcoder-syntax@1.8.4",
-  "_inCache": true,
-  "_location": "/failcoder-syntax",
-  "_phantomChildren": {},
-  "_requested": {
-    "raw": "C:\\Users\\STJACK~1\\AppData\\Local\\Temp\\d-118519-2314648-120asqv.63s198uxr\\package.tgz",
-    "scope": null,
-    "escapedName": null,
-    "name": null,
-    "rawSpec": "C:\\Users\\STJACK~1\\AppData\\Local\\Temp\\d-118519-2314648-120asqv.63s198uxr\\package.tgz",
-    "spec": "C:\\Users\\STJACK~1\\AppData\\Local\\Temp\\d-118519-2314648-120asqv.63s198uxr\\package.tgz",
-    "type": "local"
-  },
-  "_requiredBy": [
-    "#USER"
-  ],
-  "_resolved": "file:..\\d-118519-2314648-120asqv.63s198uxr\\package.tgz",
-  "_shasum": "ea4d19474890b6779d4c6eeaafcb4a295573a49e",
-  "_shrinkwrap": null,
-  "_spec": "C:\\Users\\STJACK~1\\AppData\\Local\\Temp\\d-118519-2314648-120asqv.63s198uxr\\package.tgz",
-  "_where": "C:\\Users\\STJACK~1\\AppData\\Local\\Temp\\apm-install-dir-118519-2314648-13sees2.opmcdte29",
-  "bugs": {
-    "url": "https://github.com/failcoder/failcoder-syntax/issues"
-  },
-  "dependencies": {},
+  "name": "failcoder-syntax",
+  "theme": "syntax",
+  "version": "1.8.4",
   "description": "A multi-code focused syntax theme with soft contrast in its colors.",
-  "devDependencies": {},
+  "repository": "https://github.com/failcoder/failcoder-syntax",
+  "license": "MIT",
   "engines": {
     "atom": ">=0.174.0 <2.0.0"
-  },
-  "homepage": "https://github.com/failcoder/failcoder-syntax#readme",
-  "license": "MIT",
-  "name": "failcoder-syntax",
-  "optionalDependencies": {},
-  "readme": "# failcoder-syntax theme\n\nCustom syntax theme for Atom.\n\n## Design\n\n![failcoder-syntax HTML](https://github.com/failcoder/failcoder-theme/blob/master/Screens/failcoder-theme-html.png?raw=true)\n![failcoder-syntax JS](https://github.com/failcoder/failcoder-theme/blob/master/Screens/failcoder-theme-js.png?raw=true)\n![failcoder-syntax CSS](https://github.com/failcoder/failcoder-theme/blob/master/Screens/failcoder-theme-css.png?raw=true)\n\nNew colors added, updated screenshot coming soon.\n\n### Code Font\n\nThe code font shown in the screenshot is Meslo (a Windows specific variant of the Mac's Menlo).\n\n## License\n\nfailcoder-syntax is licensed under the [Creative Commons Attribution-ShareAlike 3.0 License](http://creativecommons.org/licenses/by-sa/3.0/). You are free to share and remix the theme, however please abide by the license terms when doing so. \n\nThe following details apply to the Creative Commons license \"author specified\" components:\n",
-  "readmeFilename": "README.md",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/failcoder/failcoder-syntax.git"
-  },
-  "theme": "syntax",
-  "version": "1.8.6"
+  }
 }
