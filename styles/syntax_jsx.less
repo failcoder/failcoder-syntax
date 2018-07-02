@@ -1,0 +1,27 @@
+@import "syntax__colors";
+
+.syntax--meta.syntax--tag.syntax--jsx {
+  color: @syntax-xhtml-punctuation-color;
+}
+
+.syntax--entity.syntax--name.syntax--tag {
+  & > .syntax--component {
+    color: @syntax-xhtml-tag-color !important;
+    font-weight: bold;
+  }
+}
+
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--jsx,
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--localname.syntax--jsx {
+  color: @syntax-xhtml-key-color;
+  font-style: italic;
+}
+
+.syntax--string.syntax--jsx {
+  color: @syntax-xhtml-value-color;
+}
+
+.syntax--punctuation.syntax--definition.syntax--string.syntax--begin.syntax--jsx,
+.syntax--punctuation.syntax--definition.syntax--string.syntax--end.syntax--jsx {
+  color: @syntax-xhtml-quotes-color;
+}

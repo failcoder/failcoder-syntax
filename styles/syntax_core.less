@@ -70,18 +70,21 @@
 }
 
 .syntax--string {
-  &.syntax--unquoted {
-    font-style: italic;
-    color: lighten(@syntax-string-color, 10%);
-    background-color: @syntax-bg-inset;
-  }
+  // &.syntax--unquoted {
+  //   font-style: italic;
+  //   color: lighten(@syntax-string-color, 10%);
+  //   background-color: @syntax-bg-inset;
+  // }
 
   &.syntax--quoted {
     color: darken(@syntax-string-color, 10%);
+    background-color: @syntax-bg-inset;
   }
 
   &.syntax--other.syntax--link {
+    font-style: italic;
     color: @syntax-function-color;
+    background-color: @syntax-bg-inset;
   }
 
   &.syntax--regexp {
@@ -228,7 +231,7 @@
 }
 
 .syntax--support {
-  &.syntax--type, &.syntax--class {
+  &.syntax--type {
     color: @syntax-identifier-color;
   }
 
