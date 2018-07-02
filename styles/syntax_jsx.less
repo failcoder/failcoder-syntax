@@ -12,7 +12,8 @@
 }
 
 .syntax--entity.syntax--other.syntax--attribute-name.syntax--jsx,
-.syntax--entity.syntax--other.syntax--attribute-name.syntax--localname.syntax--jsx {
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--localname.syntax--jsx,
+.syntax--keyword.syntax--operator.syntax--assignment.syntax--jsx {
   color: @syntax-xhtml-key-color;
   font-style: italic;
 }
@@ -24,4 +25,10 @@
 .syntax--punctuation.syntax--definition.syntax--string.syntax--begin.syntax--jsx,
 .syntax--punctuation.syntax--definition.syntax--string.syntax--end.syntax--jsx {
   color: @syntax-xhtml-quotes-color;
+}
+
+.syntax--JSXNested {
+  font-weight: normal;
+  font-style: normal;
+  color: @syntax-fg-color;
 }
