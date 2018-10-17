@@ -1,22 +1,22 @@
-@import "syntax__colors";
+@import "syntax-variables";
 
 .syntax--punctuation.syntax--definition.syntax--string.syntax--php,
 .syntax--string.syntax--quoted.syntax--double.syntax--php,
 .syntax--string.syntax--quoted.syntax--single.syntax--php {
-  color: @syntax-substring-color;
+  color: @syntax-color-substring;
 }
 
 .syntax--entity.syntax--other.syntax--attribute-name.syntax--php {
-  color: @syntax-ligature-color;
+  color: @syntax-color-ligature;
 }
 
 .syntax--constant.syntax--other.syntax--php,
 .syntax--variable.syntax--parameter.syntax--php {
-  color: @syntax-variable-color;
+  color: @color-syntax-variable;
 }
 
 .syntax--support.syntax--php {
   &.syntax--class {
-    color: @syntax-identifier-color;
+    color: @syntax-color-identifier;
   }
 }

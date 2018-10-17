@@ -1,21 +1,21 @@
-@import "syntax__colors";
+@import "syntax-variables";
 
 .syntax--key.syntax--json {
   & > .syntax--string {
-    color: @syntax-json-string-color;
+    color: @syntax-color-json-string;
 
     & > .syntax--punctuation {
-      color: @syntax-json-string-punctuation-color;
+      color: @syntax-color-json-string-punctuation;
     }
   }
 }
 
 .syntax--value.syntax--json {
   & > .syntax--string {
-    color: @syntax-json-substring-color;
+    color: @syntax-color-json-substring;
 
     & > .syntax--punctuation {
-      color: @syntax-json-substring-punctuation-color;
+      color: @syntax-color-json-substring-punctuation;
     }
   }
 }

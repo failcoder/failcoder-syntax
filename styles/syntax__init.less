@@ -1,35 +1,38 @@
-@import "syntax__colors";
+@import "syntax-variables";
 
-atom-text-editor {
-  background-color: @syntax-bg-color;
-  color: @syntax-fg-color;
+atom-text-editor,
+atom-pane-container,
+atom-csv-editor,
+tablr-editor {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
 }
 
 atom-text-editor .gutter {
-  background-color: @syntax-gutter-background-color;
-  color: @syntax-gutter-text-color;
+  background-color: @syntax-gutter-color-background;
+  color: @syntax-gutter-color-text;
 }
 
 atom-text-editor .gutter .line-number.cursor-line {
-  background-color: @syntax-gutter-background-color-selected;
-  color: @syntax-gutter-text-color-selected;
+  background-color: @syntax-gutter-color-background-selected;
+  color: @syntax-gutter-color-text-selected;
 }
 
 atom-text-editor .gutter .line-number.cursor-line-no-selection {
-  color: @syntax-gutter-text-color-selected;
+  color: @syntax-gutter-color-text-selected;
 }
 
 atom-text-editor .wrap-guide {
-  background-color: @syntax-wrap-guide-color;
-	color: @syntax-wrap-guide-color;
+  background-color: @syntax-wrap-color-guide;
+	color: @syntax-wrap-color-guide;
 }
 
 atom-text-editor .indent-guide {
-  color: @syntax-indent-guide-color;
+  color: @syntax-indent-color-guide;
 }
 
 atom-text-editor .invisible-character {
-  color: @syntax-invisible-character-color;
+  color: @syntax-invisible-color-character;
 }
 
 atom-text-editor .search-results .syntax--marker .region {
@@ -42,14 +45,14 @@ atom-text-editor .search-results .syntax--marker.current-result .region {
 }
 
 atom-text-editor.is-focused .cursor {
-  border-color: @syntax-fg-accent;
+  border-color: @syntax-cursor-color;
 }
 
 atom-text-editor.is-focused .selection .region {
-  color: @syntax-selection-color;
-  background-color: @syntax-selection-bg-color;
+  color: @syntax-color-selection;
+  background-color: @syntax-color-selection-bg;
 }
 
 atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line {
-  background-color: @syntax-selection-color;
+  background-color: @syntax-color-selection;
 }

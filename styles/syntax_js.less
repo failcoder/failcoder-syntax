@@ -1,21 +1,21 @@
-@import "syntax__colors";
+@import "syntax-variables";
 
 .syntax--string.syntax--quoted.syntax--double.syntax--js,
 .syntax--string.syntax--quoted.syntax--single.syntax--js,
 .syntax--string.syntax--quoted.syntax--other.syntax--js {
-  color: @syntax-string-color;
+  color: @syntax-color-string;
 }
 
 .syntax--entity.syntax--other.syntax--attribute-name.syntax--js {
-  color: @syntax-attribute-color;
+  color: @color-syntax-attribute;
 }
 
 .syntax--entity.syntax--name.syntax--type.syntax--instance.syntax--js {
-  color: @syntax-module-color;
+  color: @syntax-color-module;
 }
 
 .syntax--support.syntax--js {
   &.syntax--class {
-    color: @syntax-identifier-color;
+    color: @syntax-color-identifier;
   }
 }

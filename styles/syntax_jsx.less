@@ -1,12 +1,12 @@
-@import "syntax__colors";
+@import "syntax-variables";
 
 .syntax--meta.syntax--tag.syntax--jsx {
-  color: @syntax-xhtml-punctuation-color;
+  color: @syntax-color-xhtml-punctuation;
 }
 
 .syntax--entity.syntax--name.syntax--tag {
   & > .syntax--component {
-    color: @syntax-xhtml-tag-color !important;
+    color: @syntax-color-xhtml-tag !important;
     font-weight: bold;
   }
 }
@@ -14,21 +14,21 @@
 .syntax--entity.syntax--other.syntax--attribute-name.syntax--jsx,
 .syntax--entity.syntax--other.syntax--attribute-name.syntax--localname.syntax--jsx,
 .syntax--keyword.syntax--operator.syntax--assignment.syntax--jsx {
-  color: @syntax-xhtml-key-color;
+  color: @syntax-color-xhtml-key;
   font-style: italic;
 }
 
 .syntax--string.syntax--jsx {
-  color: @syntax-xhtml-value-color;
+  color: @syntax-color-xhtml-value;
 }
 
 .syntax--punctuation.syntax--definition.syntax--string.syntax--begin.syntax--jsx,
 .syntax--punctuation.syntax--definition.syntax--string.syntax--end.syntax--jsx {
-  color: @syntax-xhtml-quotes-color;
+  color: @syntax-color-xhtml-quotes;
 }
 
 .syntax--JSXNested {
   font-weight: normal;
   font-style: normal;
-  color: @syntax-fg-color;
+  color: @syntax-text-color;
 }

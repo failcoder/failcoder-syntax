@@ -1,0 +1,174 @@
+// This defines all syntax variables that syntax themes must implement when they
+// include a syntax-variables.less file.
+
+// WHITE
+@syntax-white-absolute: #FFFFFF;
+@syntax-darkwhite: #C6C9CC;
+@syntax-white: #D9DCDF;
+@syntax-lightwhite: #EFEFEF;
+
+// GRAY
+@syntax-gray-absolute: #777777;
+@syntax-darkgray: #66696C;
+@syntax-gray: #797C7F;
+@syntax-lightgray: #8F8F8F;
+
+// BLACK
+@syntax-black-absolute: #000000;
+@syntax-darkblack: #26292C;
+@syntax-black: #36393C;
+@syntax-lightblack: #46494C;
+
+// RED
+@syntax-darkred: #CD2000;
+@syntax-red: #E92E2E;
+@syntax-lightred: #FF5F6F;
+@syntax-pink: #FF69A4;
+@syntax-hotpink: #FF4180;
+
+// ORANGE
+@syntax-redorange: #FB5109;
+@syntax-darkorange: #B8693F;
+@syntax-orange: #F57C00;
+@syntax-lightorange: #F59C20;
+
+// YELLOW
+@syntax-gold: #FFBF48;
+@syntax-yellow: #FFDF00;
+@syntax-lightyellow: #DBB867;
+
+// GREEN
+@syntax-olive: #A5B470;
+@syntax-lightolive: #AFC09F;
+@syntax-yellowgreen: #A8EF60;
+@syntax-darkgreen: #269F00;
+@syntax-green: #76FF03;
+@syntax-lightgreen: #65C767;
+@syntax-bluegreen: #88DFB0;
+@syntax-mint: #16DF8F;
+@syntax-moss: #95C797;
+@syntax-lightmoss: #B3D9B2;
+@syntax-aqua: #8ABEB7;
+@syntax-teal: #008080;
+
+// BLUE
+@syntax-cyan: #18FFFF;
+@syntax-lightcyan: #41B3FF;
+@syntax-darkblue: #1481FF;
+@syntax-blue: #96CBFE;
+@syntax-periwinkle: #8EB2FF;
+@syntax-lightblue: #A8CFF5;
+
+// PURPLE
+@syntax-indigo: #3300FF;
+@syntax-purple: #886DFF;
+@syntax-lightpurple: #C87DFF;
+@syntax-magenta: #FF2FFF;
+
+// General colors
+@color-syntax-constant: @syntax-yellow;
+@syntax-color-integer: @syntax-green;
+@syntax-color-string: @syntax-lightorange;
+@syntax-color-string-punctuation: @syntax-darkorange;
+@syntax-color-substring: @syntax-lightolive;
+@syntax-color-substring-punctuation: @syntax-olive;
+@syntax-color-comment: @syntax-lightblack;
+@color-syntax-attribute: @syntax-blue;
+@syntax-color-parameter: @syntax-pink;
+@syntax-color-identifier: @syntax-moss;
+@color-syntax-variable: @syntax-lightyellow;
+@syntax-color-escape: @syntax-yellowgreen;
+@color-syntax-function: @syntax-lightcyan;
+@color-syntax-method: @syntax-lightcyan;
+@syntax-color-support: @syntax-darkblue;
+@color-syntax-keyword: @syntax-periwinkle;
+@syntax-color-object: @syntax-lightred;
+@syntax-color-ligature: @syntax-magenta;
+@color-syntax-property: @syntax-lightblue;
+@syntax-color-module: @syntax-cyan;
+@syntax-color-reference: @syntax-redorange;
+@syntax-color-modifier: @syntax-purple;
+@syntax-color-storage: @syntax-lightpurple;
+@color-syntax-tag: @syntax-gold;
+@syntax-color-error: #FF0000;
+@syntax-color-warning: #FFBB00;
+@syntax-color-linter-error: rgba(255, 0, 0, 0.2);
+@syntax-color-linter-warning: rgba(255, 100, 0, 0.2);
+@color-syntax-value: @syntax-white;
+@color-syntax-class: @syntax-moss;
+@color-syntax-import: @syntax-darkblue;
+@color-syntax-snippet: @syntax-lightpurple;
+// RegExp
+@syntax-color-regexp: #99EF00;
+@syntax-regexp-bg2: #1A3F0F;
+@syntax-regexp-bg: rgba(55, 255, 50, 0.1);
+@syntax-color-regexp-punctuation: #00EF99;
+@syntax-color-regexp-keyword: #9FCF9F;
+@syntax-color-regexp-constant: #9FCF9F;
+
+// For git diff info. i.e. in the gutter
+// These are static and were not extracted from your textmate theme
+@color-syntax-renamed: @syntax-blue;
+@color-syntax-added: @syntax-yellowgreen;
+@color-syntax-modified: @syntax-lightorange;
+@color-syntax-removed: @syntax-pink;
+
+// Syntax common colors
+@syntax-bg-inset: rgba(49, 48, 46, 0.51);
+@syntax-double-quoted: @syntax-lightorange;
+@syntax-single-quoted: @syntax-magenta;
+
+// Predefined colors
+@syntax-background-color: @syntax-darkblack;
+@syntax-bg-accent: @syntax-black;
+@syntax-bg-highlight: @syntax-lightblack;
+
+@syntax-color-mg: @syntax-darkgray;
+@syntax-mg-accent: @syntax-gray;
+@syntax-mg-highlight: @syntax-lightgray;
+
+@syntax-text-color: @syntax-darkwhite;
+@syntax-cursor-color: @syntax-white;
+@syntax-fg-highlight: @syntax-lightwhite;
+
+@syntax-color-selection: @syntax-black-absolute;
+@syntax-color-selection-bg: rgba(238, 255, 238, 0.33);
+
+// Guide colors
+@syntax-wrap-color-guide: @syntax-bg-accent;
+@syntax-indent-color-guide: @syntax-bg-accent;
+@syntax-invisible-color-character: @syntax-bg-accent;
+
+// For find and replace markers
+@syntax-result-marker-color: @syntax-color-mg;
+@syntax-result-marker-color-selected: @syntax-mg-highlight;
+
+// Gutter colors
+@syntax-gutter-color-text: @syntax-text-color;
+@syntax-gutter-color-text-selected: @syntax-fg-highlight;
+@syntax-gutter-color-background: @syntax-background-color;
+@syntax-gutter-color-background-selected: @syntax-bg-highlight;
+
+// Markup specific
+@syntax-color-xhtml-tag: @syntax-lightred;
+@syntax-color-xhtml-key: @syntax-orange;
+@syntax-color-xhtml-value: @syntax-lightyellow;
+@syntax-color-xhtml-quotes: rgba(255, 205, 0, 0.5);
+@syntax-color-xhtml-punctuation: rgba(255, 120, 0, 0.66);
+
+// JSON specific
+@syntax-color-json-string: @syntax-lightred;
+@syntax-color-json-string-punctuation: rgba(255, 70, 70, 0.5);
+@syntax-color-json-substring: @syntax-lightyellow;
+@syntax-color-json-substring-punctuation: rgba(255, 205, 0, 0.5);
+
+// Stylesheet specific
+@syntax-stylesheet-property: @syntax-text-color;
+@syntax-stylesheet-punctuation: @syntax-cursor-color;
+@syntax-stylesheet-value: @syntax-fg-highlight;
+@syntax-stylesheet-element: @syntax-redorange;
+@syntax-stylesheet-id: @syntax-orange;
+@syntax-stylesheet-class: @syntax-lightyellow;
+@syntax-stylesheet-variable: @syntax-lightred;
+@syntax-stylesheet-unit: @syntax-lightorange;
+@syntax-stylesheet-pseudo: @syntax-darkorange;

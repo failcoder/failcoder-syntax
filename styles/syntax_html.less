@@ -1,26 +1,26 @@
-@import "syntax__colors";
+@import "syntax-variables";
 
 .syntax--meta.syntax--tag.syntax--html {
-  color: @syntax-xhtml-punctuation-color;
+  color: @syntax-color-xhtml-punctuation;
 }
 
 .syntax--entity.syntax--name.syntax--tag.syntax--localname.syntax--html {
-  color: @syntax-xhtml-tag-color;
+  color: @syntax-color-xhtml-tag;
   // font-style: italic;
   font-weight: bold;
 }
 
 .syntax--entity.syntax--other.syntax--attribute-name.syntax--html,
 .syntax--entity.syntax--other.syntax--attribute-name.syntax--localname.syntax--html {
-  color: @syntax-xhtml-key-color;
+  color: @syntax-color-xhtml-key;
   font-style: italic;
 }
 
 .syntax--string.syntax--html {
-  color: @syntax-xhtml-value-color;
+  color: @syntax-color-xhtml-value;
 }
 
 .syntax--punctuation.syntax--definition.syntax--string.syntax--begin.syntax--html,
 .syntax--punctuation.syntax--definition.syntax--string.syntax--end.syntax--html {
-  color: @syntax-xhtml-quotes-color;
+  color: @syntax-color-xhtml-quotes;
 }
